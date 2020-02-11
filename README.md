@@ -27,6 +27,27 @@ Create your first superuser using the following command.
 
     $ ./manage.py createsuperuser
 
+
+Development
+-----------
+
 ### Running the server
 
     $ ./manage.py runserver
+
+
+Project Information
+-------------------
+
+This is a Django example project (`imagedb`) that includes one Django 
+app called `images`.
+
+The `images` app uses two models, `Image` and `ImageLabel`.
+
+* `Image` - refers to an image that you can upload/download.
+* `ImageLabel` - refers to a label of an object inside the image.
+
+An `Image` can have multiple `ImageLabel`s. An `ImageLabel` belongs to 
+only one `Image`.
+
+A basic Django admin page is available at http://localhost:8000/admin. 
