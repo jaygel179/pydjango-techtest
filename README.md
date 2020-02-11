@@ -19,14 +19,17 @@ Docker, etc.).
 
 ### Database setup
 
-Setup your initial database (SQLite) using the following command.
+Setup your initial database (SQLite).
     
     $ ./manage.py migrate
     
-Create your first superuser using the following command.
+Create your first superuser.
 
     $ ./manage.py createsuperuser
+    
+Load initial seed data.
 
+    $ ./manage.py loaddata images
 
 Development
 -----------
