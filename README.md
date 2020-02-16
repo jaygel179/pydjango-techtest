@@ -39,6 +39,11 @@ Development
     $ ./manage.py runserver
 
 
+### Running test case
+
+    $ ./manage.py test
+
+
 Project Information
 -------------------
 

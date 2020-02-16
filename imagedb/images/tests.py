@@ -3,9 +3,6 @@ from unittest import mock
 
 from django.core.files import File
 
-from imagedb.images.models import Image
-from imagedb.images.models import ImageLabel
-
 
 class ImageViewTest(APITestCase):
     def setUp(self):
