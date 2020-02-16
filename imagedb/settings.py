@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'imagedb.images'
+
+    'rest_framework',
+
+    'imagedb.images',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +126,10 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 
 MEDIA_URL = '/media/'
+
+
+# AWS CREDENTIALS
+AWS_ACCESS_KEY = os.environ.get("AWS_ACCESS_KEY")
+AWS_SECRET_KEY = os.environ.get("AWS_SECRET_KEY")
+AWS_REGION = os.environ.get("AWS_REGION")
+AWS_BUCKET_NAME = os.environ.get("AWS_BUCKET_NAME")
