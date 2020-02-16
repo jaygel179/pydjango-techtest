@@ -7,7 +7,9 @@ def user_directory_path(_, filename):
 
 
 class Image(models.Model):
-    image = models.ImageField(upload_to=user_directory_path)
+    image = models.ImageField(upload_to=user_directory_path, blank=True)
+    file_name = models.CharField(max_length=255, blank=True)
+    uploaded_at = models.DateTimeField(auto_now_add=True)
 
 
 class ImageLabel(models.Model):
